@@ -1,0 +1,25 @@
+body{
+    background-image: url(ranyel.png); /*change background of web to image*/
+    margin: 0;
+    background-position: center; /*set background to center*/
+    background-repeat: no-repeat;/*prevent small images from repeating itself*/ 
+    background-size: cover; /*bg image cover the entire window*/
+    background-attachment: fixed; /*make it so when your web has other elements or has scrollbar the image will stay at fixed position*/
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(15px); /*blur the bg behind the element*/
+    background-color: hsla(0, 0%, 100%, 0.1); /*add a color to the blur effect*/
+    width: 100%; /*make the element cover 100 percent of width of window*/
+
+}

@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    display: flex; /*display can be move*/
+    justify-content: center; /*horizontal allignment set to center*/
+    align-items: center; /*vertical allignment*/
+    height: 120vh; /*vh = viewport height, places the calculator at the middle of the document both hori and verti*/
+    background-color: rgba(189, 189, 189, 0.82);;
+}
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: rgba(49, 49, 49, 0.82);
+    border-radius: 15px; /*round the border of calculator*/
+    max-width: 500px;
+    overflow: hidden; /*if any elements overflow it will be set to hidden*/
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none; /*remove border*/
+    background-color: rgba(90, 90, 90, 0.726);
+    color: white;
+}
+
+#keys{ /*keys is a div element*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*1fr indicates that each column should indicate an even amount of space*/
+                                           /*grid templaye columns = this set our column to 4*/
+    gap: 10px; /*this is the gap each rows*/
+    padding: 25px; /*padding around the keys*/
+
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px; /*so that button appear rounder*/
+    border: none;
+    background-color: rgba(155, 155, 155, 0.895);
+    color: white; /*color of button*/
+    font-size: 3rem; /*size of font*/
+    font-weight: bold;
+    cursor: pointer; /*cursor will be pointer when hovered*/
+}
+
+button:hover{ /*when button is hovered*/
+    background-color: rgba(175, 175, 175, 0.895);
+
+}
+
+button:active{ /*when button is clicked*/
+    background-color: rgba(210, 210, 210, 0.895);
+}
+
+.operator-btn{ /*. = is used when calling the class of an element*/
+
+    background-color: rgba(211, 137, 0, 0.888);
+
+}
+
+.operator-btn:hover{
+    background-color: rgba(255, 166, 0, 0.945);
+}
+
+.operator-btn:active{
+    background-color: rgb(250, 178, 45);
+}

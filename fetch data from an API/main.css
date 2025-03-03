@@ -1,0 +1,16 @@
+#myButton{
+    font-size: 30px;
+    
+}
+
+#pokemonName{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 15px;
+    position: relative;
+}
+
+#pokemonSprite{
+    min-width: 150px;
+    
+}

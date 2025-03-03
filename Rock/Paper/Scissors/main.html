@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+     <h1>Rock-Paper_Scissor</h1>
+     <div class="choices">
+        <button onclick="Play('rock')">Rock</button> <!--onclick attribute to a javascript function that has 1 argument-->
+        <button onclick="Play('paper')">paper</button>
+        <button onclick="Play('scissor')">Scissor</button>
+     </div>
+
+     <div id="playerDisplay">Player: </div> <!--display the word rock,paper,scissor depending on which button is clicked-->
+     <div id="computerDisplay">Computer: </div>
+     <div id="resultDisplay"></div> <!--display result (Who won)-->
+     
+
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.slider{
+    position: relative;
+    width: 500px; /*the width of the slider*/
+    margin: auto;
+    overflow: hidden;    
+}
+
+.slider img{
+    width: 100%; /*widht of img relative to the slider*/
+    height: 500px;
+    display: none; /*hid image default*/
+
+
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade; /*we are utilizing the animation we created*/
+    animation-duration: 1.5s; /*how long the animation to last*/
+
+
+}
+
+.slider button{
+    position: absolute; /*position an element relative to its parent. parent = slider*/
+    top: 50%; /*position at the middle of the y axis*/
+    transform: translateY(-50%); /*move the buttons up by 50% of the elements height*/
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer ;
+}
+
+.prev{
+    left: 0; /*align the element to the left*/
+}
+.next{
+    right: 0; /*align the element to the right*/
+}
+
+@keyframes fade { /*creating an animation. the animation was named "fade" */
+    from{opacity: .5}
+    to{opacity: 1}
+}

@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 10%, 61%);
+    margin: 0;
+    display: flex; /*display elements*/
+    flex-direction: column; /*the structure of the elements will be column*/
+    align-items: center; /*display elements to center horizontally*/
+
+}
+
+.weatherForm{
+    margin: 20px; /*create a margin space on top of the elements horizontally*/
+}
+
+.cityInput{
+    padding: 10px; /*the space between input element to other elements*/
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 10px; /*makes the corner rounder*/
+    margin: 10px;
+    width: 300px;
+}
+
+button[type="submit"]{ /*stype the button with the type submit*/
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: rgba(124, 166, 73, 0.756);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: rgba(75, 103, 41, 0.756);
+}
+
+.card{ /* style the div card element*/
+    background: linear-gradient(180deg, rgba(14, 14, 227, 0.685), rgba(248, 171, 28, 0.799)); /*slow transition between two colors*/
+    padding: 50px; /*padding between the elements inside the div in all direction*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.553);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.667);
+    margin-bottom: 25px;
+}
+
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px; 
+}
+
+.descDispaly{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.weatherEmoji{
+    margin: 0;
+    font-size: 7.5rem;
+
+}
+
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.623);
+}

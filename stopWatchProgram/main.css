@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 90%);
+}
+
+#myH1{
+    font-size: 4rem;
+    font-family: "Arial", sans-serif;
+    color: black;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgba(100, 100, 100, 0.749);
+    text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.726);
+    margin-bottom: 25px;
+}
+
+#controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease; /*slow transition of the hover effects*/
+}
+
+#startBtn{
+    background-color: green;
+}
+#startBtn:hover{
+    background-color: darkgreen
+}
+
+#stopBtn{
+    background-color: red
+}
+#stopBtn:hover{
+    background-color: darkred
+}
+
+#resetBtn{
+    background-color: blue
+}
+#resetBtn:hover{
+    background-color: darkblue
+}
